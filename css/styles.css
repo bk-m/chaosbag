@@ -1,7 +1,24 @@
 .token {
-    width: 50%;
+    width: 30%;
 }
 
 .icon {
     padding-bottom: 5px;
+}
+
+.smaller {
+    width: 5%;
+}
+
+.chance-text {
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.chance {
+    width: 100px;
+}
+
+#trash-icon {
+    vertical-align: text-top;
 }
