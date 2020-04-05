@@ -22,3 +22,8 @@
 #trash-icon {
     vertical-align: text-top;
 }
+
+.spacer {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}

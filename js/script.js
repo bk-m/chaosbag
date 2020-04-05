@@ -86,6 +86,11 @@ $(document).ready(function () {
       img.attr("src", minus5Img);
       img.appendTo(".minus5");
     }
+    if (minus5 === 0) {
+        $(".display-rows-5").css("visibility", "collapse");
+    } else {
+        $(".display-rows-5").css("visibility", "visible");
+    }
     $(".minus4").empty();
     $(".chance-4").empty();
     var cminus4 = calculateChance("minus4")
@@ -97,6 +102,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", minus4Img);
       img.appendTo(".minus4");
+    }
+    if (minus4 === 0) {
+        $(".display-rows-4").css("visibility", "collapse");
+    } else {
+        $(".display-rows-4").css("visibility", "visible");
     }
     $(".minus3").empty();
     $(".chance-3").empty();
@@ -110,6 +120,11 @@ $(document).ready(function () {
       img.attr("src", minus3Img);
       img.appendTo(".minus3");
     }
+    if (minus3 === 0) {
+        $(".display-rows-3").css("visibility", "collapse");
+    } else {
+        $(".display-rows-3").css("visibility", "visible");
+    }
     $(".minus2").empty();
     $(".chance-2").empty();
     var cminus2 = calculateChance("minus2")
@@ -121,6 +136,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", minus2Img);
       img.appendTo(".minus2");
+    }
+    if (minus2 === 0) {
+        $(".display-rows-2").css("visibility", "collapse");
+    } else {
+        $(".display-rows-2").css("visibility", "visible");
     }
     $(".minus1").empty();
     $(".chance-1").empty();
@@ -134,6 +154,11 @@ $(document).ready(function () {
       img.attr("src", minus1Img);
       img.appendTo(".minus1");
     }
+    if (minus1 === 0) {
+        $(".display-rows-1").css("visibility", "collapse");
+    } else {
+        $(".display-rows-1").css("visibility", "visible");
+    }
     $(".zero").empty();
     $(".chance0").empty();
     var c0 = calculateChance("zero")
@@ -145,6 +170,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", zeroImg);
       img.appendTo(".zero");
+    }
+    if (zero === 0) {
+        $(".display-rows-0").css("visibility", "collapse");
+    } else {
+        $(".display-rows-0").css("visibility", "visible");
     }
     $(".plus1").empty();
     $(".chanceplus1").empty();
@@ -158,6 +188,11 @@ $(document).ready(function () {
       img.attr("src", plus1Img);
       img.appendTo(".plus1");
     }
+    if (plus1 === 0) {
+        $(".display-rows-plus1").css("visibility", "collapse");
+    } else {
+        $(".display-rows-plus1").css("visibility", "visible");
+    }
     $(".cultist").empty();
     $(".chancecultist").empty();
     var cc = calculateChance("cultist")
@@ -169,6 +204,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", cultistImg);
       img.appendTo(".cultist");
+    }
+    if (cultist === 0) {
+        $(".display-rows-cultist").css("visibility", "collapse");
+    } else {
+        $(".display-rows-cultist").css("visibility", "visible");
     }
     $(".skull").empty();
     $(".chanceskull").empty();
@@ -182,6 +222,11 @@ $(document).ready(function () {
       img.attr("src", skullImg);
       img.appendTo(".skull");
     }
+    if (skull === 0) {
+        $(".display-rows-skull").css("visibility", "collapse");
+    } else {
+        $(".display-rows-skull").css("visibility", "visible");
+    }
     $(".thing").empty();
     $(".chancething").empty();
     var ct = calculateChance("thing")
@@ -193,6 +238,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", elderThingImg);
       img.appendTo(".thing");
+    }
+    if (elderThing === 0) {
+        $(".display-rows-thing").css("visibility", "collapse");
+    } else {
+        $(".display-rows-thing").css("visibility", "visible");
     }
     $(".tablet").empty();
     $(".chancetablet").empty();
@@ -206,6 +256,11 @@ $(document).ready(function () {
       img.attr("src", tabletImg);
       img.appendTo(".tablet");
     }
+    if (tablet === 0) {
+        $(".display-rows-tablet").css("visibility", "collapse");
+    } else {
+        $(".display-rows-tablet").css("visibility", "visible");
+    }
     $(".fail").empty();
     $(".chancefail").empty();
     var cf = calculateChance("fail")
@@ -218,6 +273,11 @@ $(document).ready(function () {
       img.attr("src", autoFailImg);
       img.appendTo(".fail");
     }
+    if (autoFail === 0) {
+        $(".display-rows-fail").css("visibility", "collapse");
+    } else {
+        $(".display-rows-fail").css("visibility", "visible");
+    }
     $(".sign").empty();
     $(".chancesign").empty();
     var csi = calculateChance("sign")
@@ -229,6 +289,11 @@ $(document).ready(function () {
       var img = $("<img class='smaller'>");
       img.attr("src", elderSignImg);
       img.appendTo(".sign");
+    }
+    if (elderSign === 0) {
+        $(".display-rows-sign").css("visibility", "collapse");
+    } else {
+        $(".display-rows-sign").css("visibility", "visible");
     }
   }
 
