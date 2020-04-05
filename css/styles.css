@@ -7,7 +7,7 @@
 }
 
 .smaller {
-    width: 5%;
+    width: 10%;
 }
 
 .chance-text {
@@ -16,7 +16,7 @@
 }
 
 .chance {
-    width: 100px;
+    width: 80px;
 }
 
 #trash-icon {
@@ -26,4 +26,8 @@
 .spacer {
     margin-top: 1px;
     margin-bottom: 1px;
+}
+
+.cus-col {
+    padding: 0;
 }

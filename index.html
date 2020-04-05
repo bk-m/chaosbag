@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
     <script src="./js/script.js"></script>
   </head>
   <body>
@@ -20,189 +22,542 @@
         <table style="width: 100%;">
           <tr class="display-rows">
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="-5">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="-5"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/3Ym1IeG.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="-5">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="-5"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="-4">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="-4"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/qrgGQRD.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="-4">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="-4"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="-3">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="-3"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/yfs8gHq.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="-3">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="-3"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="-2">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="-2"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/bfTg2hb.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="-2">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="-2"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="-1">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="-1"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/w3XbrCC.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="-1">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="-1"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="0">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="0"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/btEtVfd.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="0">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="0"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="+1">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="+1"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/uIx8jbY.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="+1">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="+1"
+              >
+                +
+              </button>
             </td>
           </tr>
           <tr class="display-rows">
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="skull">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="skull"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/stbBxtx.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="skull">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="skull"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="cultist">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="cultist"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/VzhJJaH.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="cultist">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="cultist"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="tablet">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="tablet"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/1plY463.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="tablet">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="tablet"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="thing">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="thing"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/ttnspKt.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="thing">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="thing"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="fail">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="fail"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/lns4fhz.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="fail">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="fail"
+              >
+                +
+              </button>
             </td>
             <td class="icon">
-              <button type="button" class="btn btn-secondary btn-sm minusBtn" value="sign">-</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm minusBtn"
+                value="sign"
+              >
+                -
+              </button>
               <img
                 class="token"
                 src="https://i.imgur.com/nEmqjmj.png"
                 alt="-5"
               />
-              <button type="button" class="btn btn-secondary btn-sm plusBtn" value="sign">+</button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm plusBtn"
+                value="sign"
+              >
+                +
+              </button>
             </td>
             <td>
-                <button type="button" class="btn btn-secondary btn-sm clearBtn"><ion-icon id="trash-icon" name="trash-outline"></ion-icon> Clear</button>
+              <button type="button" class="btn btn-secondary btn-sm clearBtn">
+                <ion-icon id="trash-icon" name="trash-outline"></ion-icon> Clear
+              </button>
             </td>
           </tr>
         </table>
       </div>
-      <hr class="spacer">
-      <div class="container display">
+      <hr class="spacer" />
+      <div class="row">
+        <div class="col-xs-6 cus-col">
           <table style="width: 100%;">
             <tr>
-                <th class="chance-header"></th>
+              <th class="chance-header"></th>
             </tr>
             <tr class="display-rows-5">
-                <td class="chance chance-5"></td>
-                <td class="minus5"></td>
+              <td class="chance chance-5"></td>
+              <td class="minus5"></td>
             </tr>
             <tr class="display-rows-4">
-                <td class="chance chance-4"></td>
-                <td class="minus4"></td>
+              <td class="chance chance-4"></td>
+              <td class="minus4"></td>
             </tr>
             <tr class="display-rows-3">
-                <td class="chance chance-3"></td>
-                <td class="minus3"></td>
+              <td class="chance chance-3"></td>
+              <td class="minus3"></td>
             </tr>
             <tr class="display-rows-2">
-                <td class="chance chance-2"></td>
-                <td class="minus2"></td>
+              <td class="chance chance-2"></td>
+              <td class="minus2"></td>
             </tr>
             <tr class="display-rows-1">
-                <td class="chance chance-1"></td>
-                <td class="minus1"></td>
+              <td class="chance chance-1"></td>
+              <td class="minus1"></td>
             </tr>
             <tr class="display-rows-0">
-                <td class="chance chance0"></td>
-                <td class="zero"></td>
+              <td class="chance chance0"></td>
+              <td class="zero"></td>
             </tr>
             <tr class="display-rows-plus1">
-                <td class="chance chanceplus1"></td>
-                <td class="plus1"></td>
+              <td class="chance chanceplus1"></td>
+              <td class="plus1"></td>
             </tr>
             <tr class="display-rows-skull">
-                <td class="chance chanceskull"></td>
-                <td class="skull"></td>
+              <td class="chance chanceskull"></td>
+              <td class="skull"></td>
             </tr>
             <tr class="display-rows-cultist">
-                <td class="chance chancecultist"></td>
-                <td class="cultist"></td>
+              <td class="chance chancecultist"></td>
+              <td class="cultist"></td>
             </tr>
             <tr class="display-rows-tablet">
-                <td class="chance chancetablet"></td>
-                <td class="tablet"></td>
+              <td class="chance chancetablet"></td>
+              <td class="tablet"></td>
             </tr>
             <tr class="display-rows-thing">
-                <td class="chance chancething"></td>
-                <td class="thing"></td>
+              <td class="chance chancething"></td>
+              <td class="thing"></td>
             </tr>
             <tr class="display-rows-fail">
-                <td class="chance chancefail"></td>
-                <td class="fail"></td>
+              <td class="chance chancefail"></td>
+              <td class="fail"></td>
             </tr>
             <tr class="display-rows-sign">
-                <td class="chance chancesign"></td>
-                <td class="sign"></td>
+              <td class="chance chancesign"></td>
+              <td class="sign"></td>
             </tr>
           </table>
+        </div>
+        <div class="col-xs-6 cus-col">
+          <strong>Stats</strong>
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <strong>Skull Value</strong>
+              </td>
+              <td>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valueMinusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="skull"
+                    >
+                      -
+                    </button>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Skull Value"
+                    value="0"
+                    id="skullvalue"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valuePlusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="skull"
+                    >
+                      +
+                    </button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Cultist Value</strong>
+              </td>
+              <td>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valueMinusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="cultist"
+                    >
+                      -
+                    </button>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Cultist Value"
+                    value="0"
+                    id="cultistvalue"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valuePlusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="cultist"
+                    >
+                      +
+                    </button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Tablet Value</strong>
+              </td>
+              <td>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valueMinusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="tablet"
+                    >
+                      -
+                    </button>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Tablet Value"
+                    value="0"
+                    id="tabletvalue"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valuePlusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="tablet"
+                    >
+                      +
+                    </button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Elder Thing Value</strong>
+              </td>
+              <td>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valueMinusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="thing"
+                    >
+                      -
+                    </button>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Elder Thing Value"
+                    value="0"
+                    id="thingvalue"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valuePlusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="thing"
+                    >
+                      +
+                    </button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Elder Sign Value</strong>
+              </td>
+              <td>
+                <div class="input-group input-group-sm">
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valueMinusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="sign"
+                    >
+                      -
+                    </button>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Elder Sign Value"
+                    value="0"
+                    id="signvalue"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-default btn-sm valuePlusBtn"
+                      type="button"
+                      style="width: 30px;"
+                      value="sign"
+                    >
+                      +
+                    </button>
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Mean: </strong><span id="mean"></span>
+                </td>
+              <td>
+                <canvas id="pieChart"></canvas>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
